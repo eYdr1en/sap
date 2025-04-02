@@ -71,7 +71,7 @@ Zde jsou odpovědi na otázky z testu s upraveným formátováním LaTeX pro Git
     1.  $f = \neg d \neg c b + \neg d c \neg a + b \neg a + d \neg c a + d c \neg b$
     2.  $f = \neg d \neg c b + \neg d c \neg a + b \neg a + d \neg c a + d c \neg a$
     3.  $f = \neg d \neg c b + \neg d c \neg a + c a + d c \neg a + d \neg c b$
-    *(Poznámka: Další řešení $f = \neg d \neg c b + \neg d c \neg a + d \neg c a + d c \neg a + d \neg c b$ má 15 literálů a není tedy minimální.)*
+    *(Poznámka: Další řešení* $f = \neg d \neg c b + \neg d c \neg a + d \neg c a + d c \neg a + d \neg c b$ *má 15 literálů a není tedy minimální.)*
 
 **3. Obvod "půlsčítačka" (Half Adder)**
 
@@ -395,9 +395,9 @@ Zde jsou odpovědi na otázky z testu s upraveným formátováním LaTeX pro Git
 *   **Výrazy pro detekci přetečení (V):**
     1.  **Použitím pravidel pro sčítání:** Aplikujte pravidla z Q24 na operaci $A + (\text{complement } B)$.
         *   $V = C_{n-1} \oplus C_n$ (kde $C_{n-1}, C_n$ jsou přenosy při sčítání $A$ a doplňku $B$).
-        *   $V = (A_{n-1} \land (\neg B)_{n-1} \land \neg S_{n-1}) \lor (\neg A_{n-1} \land \neg (\neg B)_{n-1} \land S_{n-1})$
+        *   $V = (A_{n-1} \land \neg B_{n-1} \land \neg S_{n-1} \lor \neg A_{n-1} \land \neg \neg B_{n-1} \land S_{n-1})$
     2.  **Přímo pomocí znamének A, B, S:** Přetečení nastane, pokud A a B mají *různá* znaménka a výsledek S má stejné znaménko jako B.
-        $V = (\neg A_{n-1} \land B_{n-1} \land \neg S_{n-1}) \lor (A_{n-1} \land \neg B_{n-1} \land S_{n-1})$
+        *   $V = (\neg A_{n-1} \land B_{n-1} \land \neg S_{n-1}) \lor (A_{n-1} \land \neg B_{n-1} \land S_{n-1})$
 
 **26. Detekce nesprávného výsledku při sčítání nezáporných čísel**
 
